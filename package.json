@@ -1,0 +1,23 @@
+{
+  "name": "asa-front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eduardaricaldes/asa-front-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardaricaldes/asa-front-end/issues"
+  },
+  "homepage": "https://github.com/eduardaricaldes/asa-front-end#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
