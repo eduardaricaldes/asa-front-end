@@ -7,7 +7,7 @@ export default function Home() {
       <div className="h-40 w-40 relative">
         <Image src={imageASA} alt="white logo image" fill/>
       </div>
-      <span className="text-white font-thin mt-5 w-24 text-center text-normal">Ação Social Adventista</span>
+      <span className="text-white font-thin mt-5 w-28 text-center text-normal">Ação Social Adventista</span>
     </div>
   )
 }
