@@ -4,7 +4,7 @@ import imageMenu from "@/assets/images/menu.svg"
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between">
+    <div className="bg-green flex justify-between w-screen py-7 px-4">
       <div className="h-5 w-5 relative menu">
         <Image src={imageMenu} alt="white menu image" fill/>
       </div>

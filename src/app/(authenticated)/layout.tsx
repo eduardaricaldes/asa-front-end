@@ -1,9 +1,10 @@
 import '../globals.scss'
 import type { Metadata } from 'next'
 
-import Header from "@/components/Header"
+import Header from "@/components/Header";
+import Navbar from '@/components/Navbar'
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'ASA',
   description: 'ASA application for donations',
 }
@@ -16,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
+          <Navbar/>
+          {children}
       </body>
     </html>
   )
