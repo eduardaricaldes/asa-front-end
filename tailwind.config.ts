@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -15,20 +15,20 @@ const config: Config = {
         xl: '1440px',
       },
       colors: {
-        'green': '#247356',
+        green: '#247356',
         'green-dark': '#1C6147',
-        'gray': '#A9A9A9',
+        gray: '#A9A9A9',
         'gray-light': '#d3dce6',
-        'white': '#FFFCFF',
-        'black': '#1E1E1E',
-        'yellow': '#BC9212'
+        white: '#FFFCFF',
+        black: '#1E1E1E',
+        yellow: '#BC9212',
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'sans-serif'],
       },
-      extend: {}
+      extend: {},
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

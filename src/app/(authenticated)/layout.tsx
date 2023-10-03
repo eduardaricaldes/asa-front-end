@@ -1,25 +1,24 @@
-import '../globals.scss'
-import type { Metadata } from 'next'
+import '../globals.scss';
+import type { Metadata } from 'next';
 
-import Header from "@/components/Header";
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/Navbar';
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: 'ASA',
   description: 'ASA application for donations',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>
-          <Navbar/>
-          {children}
+        <Navbar />
+        {children}
       </body>
     </html>
-  )
+  );
 }
