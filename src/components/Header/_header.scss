@@ -1,0 +1,13 @@
+.statistics {
+  > p {
+    margin-bottom: 15px;
+    
+    > .label {
+      margin-right: 5px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 10px;
+    }
+  }
+}
