@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "cssnano": "^6.0.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
