@@ -4,9 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
 body {
   background-color: white;
-  font-family: 'Plus Jakarta Sans', sans-serif;
   letter-spacing: 0.05em;
 }
 
