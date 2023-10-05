@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <>
-      <Header>
+      <Header title='Pessoas Assistidas'>
         <Statistics />
       </Header>
       <Container>

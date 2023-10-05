@@ -1,0 +1,25 @@
+.input {
+  border-bottom: 1.2px solid gray;
+  margin-bottom: 10px;
+
+  &:focus-within,
+  &.filled {
+    border-bottom: 2px solid green;
+  }
+  
+  label {
+    font-size: 12px;
+  }
+
+  input {
+    z-index: 1;
+    font-weight: 100;
+    width: 100%;
+    padding: 0px 5px 2px 5px;
+
+    &:focus {
+      box-shadow: 0 0 0 0;
+      outline: 0;
+    }
+  }
+}
