@@ -1,0 +1,18 @@
+.accordion {
+  .accordion-icon {
+    transition: .5s;
+
+    &.open {
+      transform: rotate(180deg);
+      transition: transform .5s ease;
+    }
+  }
+
+  .content {
+    display: none;
+
+    &.open {
+      display: block;
+    }
+  }
+}
