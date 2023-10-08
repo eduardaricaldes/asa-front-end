@@ -2,6 +2,7 @@
 
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
 import classNames from "classnames";
+import Image from 'next/image';
 
 import { Container } from "@/components/Container";
 import Header from "@/components/Header";
@@ -9,6 +10,8 @@ import Input from "@/components/Input";
 import { useState } from "react";
 import Button from "@/components/Button";
 import Family from "./Family";
+import Modal from "@/components/Modal";
+import modalLogo from "@/assets/images/modal-logo.svg";
 
 export interface IPerson {
   name: string;
@@ -27,6 +30,12 @@ export interface IFormInput {
 }
 
 export default function CreateFamily() {
+  const [openModal, setOpen] = useState(false);
+  const [openMessage, setModalMessage] = useState("Cadastro Concluído com sucesso");
+
+  const toggleModal = () => {
+    setOpen(!openModal);
+  }
   const [addedNewPerson, setAddedNewPerson] = useState<boolean>(false);
   const {
     control,
@@ -80,6 +89,12 @@ export default function CreateFamily() {
 
   return (
     <>
+      <Modal open={true} dismissible>
+        <div className="w-full bg-white py-5 px-7 rounded-lg flex flex-col justify-center items-center">
+          <Image src={modalLogo} alt="modal logo" />
+          <span className="font-thin text-center">{openMessage}</span>
+        </div>
+      </Modal>
       <Header title="Cadastro Familiar" />
       <Container>
         <form onSubmit={handleSubmit(onSubmit)}>

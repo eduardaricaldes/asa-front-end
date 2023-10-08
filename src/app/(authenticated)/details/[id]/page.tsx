@@ -100,7 +100,7 @@ export default function Details() {
 
   return (
     <>
-      <Modal open={openModal}>
+      <Modal open={openModal} dismissible={false}>
         <MakeDonation relatives={family.people} />
       </Modal>
       <Header title="Dados da Família" />

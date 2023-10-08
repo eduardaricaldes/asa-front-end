@@ -20,7 +20,7 @@ const Modal: React.FC<ModalProps> = ({ open, dismissible = true, children, class
   }, [open]);
 
   useEffect(() => {
-    if (!open && dismissible) {
+    if (open && dismissible) {
       const timeout = setTimeout(() => {
         setVisible(false);
       }, 2000);
