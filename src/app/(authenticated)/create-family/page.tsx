@@ -2,7 +2,6 @@
 
 import { useForm, SubmitHandler, Controller } from "react-hook-form";
 import classNames from "classnames";
-import { TrashIcon } from '@heroicons/react/20/solid'
 
 import { Container } from "@/components/Container";
 import Header from "@/components/Header";

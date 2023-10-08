@@ -17,6 +17,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-hook-form": "^7.47.0",
+    "react-select": "^5.7.7",
     "tailwind-variants": "^0.1.14"
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-select": "^5.0.1",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.50.0",
     "eslint-config-next": "latest",

@@ -1,3 +1,5 @@
+"use client";
+
 import { Container } from "@/components/Container";
 import Header from "@/components/Header";
 import Holder from "./Holder";
@@ -7,8 +9,16 @@ import Relatives from "./Relatives";
 import DonationHistory, { DonationProps } from "./DonationHistory";
 import Button from "@/components/Button";
 import { PlusCircleIcon } from "@heroicons/react/20/solid";
+import Modal from "@/components/Modal";
+import MakeDonation from "./MakeDonation";
+import { useState } from "react";
 
 export default function Details() {
+  const [openModal, setOpen] = useState(false);
+
+  const toggleModal = () => {
+    setOpen(!openModal);
+  }
 
   const family = {
     "id": 1,
@@ -90,6 +100,9 @@ export default function Details() {
 
   return (
     <>
+      <Modal open={openModal}>
+        <MakeDonation relatives={family.people} />
+      </Modal>
       <Header title="Dados da Família" />
       <Container className="mb-12">
         <Holder
@@ -122,7 +135,7 @@ export default function Details() {
           ) : (<></>)
         }
 
-        <Button type="button" className="donation bg-green flex items-center justify-center text-white">
+        <Button type="button" className="donation bg-green flex items-center justify-center text-white" onClick={toggleModal}>
           <PlusCircleIcon className="h-5 w-5 mr-3" />
           <span className="font-thin">Fazer Doação</span>
         </Button>

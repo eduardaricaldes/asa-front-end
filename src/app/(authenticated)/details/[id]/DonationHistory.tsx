@@ -30,7 +30,7 @@ export function FamilyDonation({ name, lastName, donation }: Donation) {
     <>
       <li className="w-full flex justify-between">
         <span className="text-sm">{name} {lastName}</span>
-        <span className="text-sm">{donation.createdAt.toLocaleString()}</span>
+        <span className="text-sm">{donation.createdAt.toLocaleDateString()}</span>
       </li>
     </>
   )
