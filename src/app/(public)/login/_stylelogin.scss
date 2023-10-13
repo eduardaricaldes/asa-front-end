@@ -1,0 +1,16 @@
+
+.login {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    @apply bg-green-dark w-screen h-screen;
+    clip-path: polygon(300% 0, 0 0, 0 60%);
+    z-index: 1;
+  }
+
+  .login-container {
+    z-index: 2;
+    position: relative;
+  }
+}

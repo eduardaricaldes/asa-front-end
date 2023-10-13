@@ -14,9 +14,10 @@ const config: Config = {
         lg: '976px',
         xl: '1440px',
       },
+
       colors: {
         green: '#247356',
-        'green-dark': '#1C6147',
+        'green-dark': '#005C53',
         gray: '#A9A9A9',
         'gray-light': '#d3dce6',
         white: '#FFFCFF',
@@ -26,6 +27,7 @@ const config: Config = {
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'sans-serif'],
       },
+
       extend: {},
     },
   },
